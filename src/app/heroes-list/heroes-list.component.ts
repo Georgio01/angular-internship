@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Hero } from '../type.component';
 
 @Component({
   selector: 'app-heroes-list',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './heroes-list.component.less'
 })
 export class HeroesListComponent {
+ 
+  @Input({required:true}) hero!:Hero;
 
+  
+ 
 }
